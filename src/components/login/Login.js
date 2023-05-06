@@ -1,35 +1,85 @@
-import React from "react";
-import {
-    Container,CardGroup, Card
-} from 'react-bootstrap'
-import './Login.css'
+
+import React, { useState, useEffect } from 'react';
+// import DigitalClock from './components/Clock/DigitalClock';
+// import {
+//     Container,CardGroup, Card
+// } from 'react-bootstrap'
+// import './Login.css'
+function Clock(){
+  
+  const date = new Date(); return ( <span> ...</span>)
+ 
+}
+
 function Login() {
     return (
-        <div class="content-wrapper">
-       
-             <div class="row">
-                <div class="col-md-12">
-                    <h4 class="page-head-line">Please Login To Enter <div class="pull-right"><span id="tick2" class=""></span>&nbsp;
-                  </div>
-            
-                 </h4>
-                </div>
+      <div className="content-wrapper">
+       <div className="container">
+           <div className="row">
+
+           <div className="col-md-12">
+                 <h4 className="page-head-line">Please Login To Enter <div className="pull-right"><span id="tick2" className=""></span>&nbsp;
+             {/* $date = new DateTime();
+             echo $date->format('l, F jS, Y');  */}
+               </div></h4>
             </div>
 
             <form name="admin" method="post">
-            <div class="row">
-                <div class="col-md-3">
+           <div className="row">
+               <div className="col-md-3">
+                  
                      <label>Enter Staff ID : </label>
-                        <input type="text" name="staffid" class="form-control" placeholder="Staff ID" autocomplete="off" required />
-                        <label>Enter Password :  </label>
-                        <input type="password" name="password" class="form-control" placeholder="Password" autocomplete="off" required />
-                        <hr />
-                        <button type="submit" name="submit" class="btn btn-primary"><span class="glyphicon glyphicon-user"></span> &nbsp;Log Me In </button>&nbsp;
-                </div>
-                </div>
-                </form>
+                       <input type="text" name="staffid" className="form-control" placeholder="Staff ID" autocomplete="off" required />
+                       <label>Enter Password :  </label>
+                       <input type="password" name="password" className="form-control" placeholder="Password" autocomplete="off" required />
+                       <hr />
+                      <button type="submit" name="submit" className="btn btn-primary"><span className="glyphicon glyphicon-user"></span> &nbsp;Log Me In </button>&nbsp; 
+               </div>
+               <div className="col-md-9">
+              <div className="alert alert-info">
+              This is the official App of Prestea Huni-Valley Muncipal Education Office.
+              <br/>
+                         Login to enter into the mainpage.
+                       <br />
+                        <strong> Some of its features are given below :</strong>
+                       <ul>
+                         <li>
+                         FINANCE AND ADMINISTRATION
+                         </li>
+                           <li>
+                             HUMAN RESOURCE DEPARTMENT
+                           </li>
+                           <li>
+                             MANAGEMENT AND SUPERVISION
+                           </li>
+                           <li>
+                           PLANNING,DATA ENTRY AND MONITERING 
+                           </li>
+                           <li>
+                              PRINCIPAL ACCOUNTANT
+                           </li>
+                       </ul>
+              </div>
+              </div>
+               </div>
+              </form>
 
-     </div>
+             
+                 
+          {/* //   
+          //  <span style="color:red;" ><?php echo htmlentities($_SESSION['errmsg']); ?><?php echo htmlentities($_SESSION['errmsg']="");?></span>
+          // 
+          //    */}
+             {/* </div> */}
+
+
+
+
+             </div> 
+
+          </div>
+          
+      </div>
 
 
 
