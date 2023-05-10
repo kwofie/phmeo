@@ -1,15 +1,5 @@
 
 import React, { useState, useEffect } from 'react';
-// import DigitalClock from './components/Clock/DigitalClock';
-// import {
-//     Container,CardGroup, Card
-// } from 'react-bootstrap'
-// import './Login.css'
-function Clock(){
-  
-  const date = new Date(); return ( <span> ...</span>)
- 
-}
 
 function Login() {
     return (
@@ -29,9 +19,9 @@ function Login() {
                <div className="col-md-3">
                   
                      <label>Enter Staff ID : </label>
-                       <input type="text" name="staffid" className="form-control" placeholder="Staff ID" autocomplete="off" required />
+                       <input type="text" name="staffid" className="form-control" placeholder="Staff ID" autoComplete="off" required />
                        <label>Enter Password :  </label>
-                       <input type="password" name="password" className="form-control" placeholder="Password" autocomplete="off" required />
+                       <input type="password" name="password" className="form-control" placeholder="Password" autoComplete="off" required />
                        <hr />
                       <button type="submit" name="submit" className="btn btn-primary"><span className="glyphicon glyphicon-user"></span> &nbsp;Log Me In </button>&nbsp; 
                </div>
@@ -63,48 +53,14 @@ function Login() {
               </div>
                </div>
               </form>
-
-             
-                 
-          {/* //   
-          //  <span style="color:red;" ><?php echo htmlentities($_SESSION['errmsg']); ?><?php echo htmlentities($_SESSION['errmsg']="");?></span>
-          // 
-          //    */}
-             {/* </div> */}
-
-
-
-
              </div> 
 
           </div>
           
       </div>
 
-
-
-
-    //   <img
-    //     src="https://i.imgur.com/MK3eW3As.jpg"
-    //     alt="Katherine Johnson"
-    //   />
     );
   }
-
-// const Login = () => {
-//     return(
-//     <div>
-   
-
-
-
-
-
-//     </div>
-
-//     )
-// }
-
 
 
 export default Login;
