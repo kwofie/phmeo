@@ -1,8 +1,8 @@
 import './App.css';
-import Login from './components/Login/Login.js';
+import Login from './components/login/Login.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './components/Navbar/Navbar';
-import  './components/Login/Login.css';
+import  './components/login/Login.css';
 import Dashboard from './components/Dashboard/Dashboard';
 import './components/Dashboard/dashboard.css'
 // import DigitalClock from './components/Clock/DigitalClock';
@@ -18,7 +18,7 @@ function App() {
   return (
 <BrowserRouter>
 
-  <Routes>
+     <Routes>
       <Route path="/Login" element={<Login/>}></Route>   
       <Route path="/Navbar" element={<Navbar/>}></Route> 
       <Route path="/Dashboard" element={<Dashboard/>}></Route> 
