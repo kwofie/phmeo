@@ -1,5 +1,5 @@
 import './App.css';
-import Login from './components/login/Login.js';
+import Login from './components/login/Login';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './components/Navbar/Navbar';
 import  './components/Login/Login.css';
