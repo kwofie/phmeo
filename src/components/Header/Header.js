@@ -1,6 +1,6 @@
 import React from "react";
 import { Nav,Navbar} from "react-bootstrap"
-
+import PHMEO from "../images/PHMEO.png";
 
 function Header() {
 
@@ -8,12 +8,13 @@ function Header() {
    
 <Navbar className="navbar navbar-inverse set-radius-zero">
 <Nav className="container">
-        <div className="navbar-header">  
+<img  alt="phmeo" className="header-logo" src={PHMEO}/>  
+        <Navbar.Brand className="navbar-header">
              <a className="navbar-brand" href="">
               PRESTEA HUNI-VALLEY MUNICIPAL
                EDUCATION OFFICE
             </a>
-        </div>
+        </Navbar.Brand>
         <div className="left-div">
          <i className="fa fa-user-plus login-icon" ></i>
         </div>
