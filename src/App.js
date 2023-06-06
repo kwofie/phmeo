@@ -1,7 +1,7 @@
 import './App.css';
-import Login from './components/Login/Login.js';
+import Login from './components/login/Login.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Header from './components/Header/Header';
+import Navbar from './components/Navbar/Navbar';
 import  './components/Login/Login.css';
 import Dashboard from './components/Dashboard/Dashboard';
 import './components/Dashboard/dashboard.css'
@@ -19,12 +19,11 @@ function App() {
 <BrowserRouter>
 
   <Routes>
-      <Route path="/Login" element={<Login/>}/>   
-      <Route path="/Navbar" element={<Header/>}/> 
-      <Route path="/Dashboard" element={<Dashboard/>}/>
-  </Routes>
-
-</BrowserRouter>
+      <Route path="/Login" element={<Login/>}></Route>   
+      <Route path="/Navbar" element={<Navbar/>}></Route> 
+      <Route path="/Dashboard" element={<Dashboard/>}></Route> 
+    </Routes>
+    </BrowserRouter>
 
   );
 }
