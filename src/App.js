@@ -1,29 +1,34 @@
 import './App.css';
+import React, { useState } from 'react';
 import Login from './components/Login/Login';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Header from './components/Header/Header';
-import  './components/Login/Login.css';
+import './components/Dashboard/dashboard.css';
 import Dashboard from './components/Dashboard/Dashboard';
-import './components/Dashboard/dashboard.css'
+import Header from './components/Header/Header';
 // import DigitalClock from './components/Clock/DigitalClock';
 import {
-  BrowserRouter, Route,
-  Routes,
+  BrowserRouter,Route,Routes 
 } from "react-router-dom";
 
 
 // THE ROUTER DOM
 
 function App() {
-  return (
-<BrowserRouter>
+  const [token, setToken] = useState();
 
-  <Routes>
-      <Route path="/Login" element={<Login/>}></Route>   
-      <Route path="/Header" element={<Header/>}></Route> 
-      <Route path="/Dashboard" element={<Dashboard/>}></Route> 
-    </Routes>
-    </BrowserRouter>
+  if(!token) {
+    return <Login setToken={setToken} />
+  }
+
+  return (
+   <BrowserRouter>
+   <Routes>
+    <Route path="/" element={<Login/>}></Route>
+     <Route path="/Dashboard" element={<Dashboard/>}></Route>
+     <Route path="/Header" element={<Header/>}></Route> 
+     {/* <Route path='/' Component={Login}/> */}
+   </Routes>
+   
+   </BrowserRouter>
 
   );
 }

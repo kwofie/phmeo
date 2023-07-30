@@ -1,7 +1,36 @@
+import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 
-import React, { useState, useEffect } from 'react';
 
-function Login() {
+async function loginUser(credentials) {
+  return fetch('http://localhost:8080/login', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(credentials)
+  })
+    .then(data => data.json())
+ }
+
+
+
+function Login({ setToken }) {
+  const [username, setUserName] = useState();
+  const [password, setPassword] = useState();
+
+  const handleSubmit = async e => {
+    e.preventDefault();
+    const token = await loginUser({
+      username,
+      password
+    });
+    setToken(token);
+  }
+
+
+
+
     return (
       <div className="content-wrapper">
        <div className="container">
@@ -14,16 +43,17 @@ function Login() {
                </div></h4>
             </div>
 
-            <form name="admin" method="post">
+            <form  onSubmit={handleSubmit}>
            <div className="row">
                <div className="col-md-3">
                   
                      <label>Enter Staff ID : </label>
-                       <input type="text" name="staffid" className="form-control" placeholder="Staff ID" autoComplete="off" required />
+                       <input type="text"  onChange={e => setUserName(e.target.value)} className="form-control" placeholder="Staff ID" autoComplete="off"/>
                        <label>Enter Password :  </label>
-                       <input type="password" name="password" className="form-control" placeholder="Password" autoComplete="off" required />
+                       <input type="password" onChange={e => setPassword(e.target.value)} className="form-control" placeholder="Password" autoComplete="off"/>
                        <hr />
-                      <button type="submit" name="submit" className="btn btn-primary"><span className="glyphicon glyphicon-user"></span> &nbsp;Log Me In </button>&nbsp; 
+                      <button type="submit"  className="btn btn-primary"><span className="fa fa-user"></span> &nbsp;Log Me In </button>&nbsp;&nbsp;
+                      <button type="submit"  className="btn btn-secondary"><span className="fa fa-users"></span> &nbsp;Sign Up</button>
                </div>
                <div className="col-md-9">
               <div className="alert alert-info">
@@ -61,6 +91,7 @@ function Login() {
 
     );
   }
-
-
 export default Login;
+
+Login.propTypes = {setToken: PropTypes.func.isRequired
+}

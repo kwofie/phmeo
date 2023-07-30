@@ -10,10 +10,7 @@ function Header() {
 <Nav className="container">
 <img  alt="phmeo" className="header-logo" src={PHMEO}/>  
         <Navbar.Brand className="navbar-header">
-             <a className="navbar-brand" href="">
-              PRESTEA HUNI-VALLEY MUNICIPAL
-               EDUCATION OFFICE
-            </a>
+           
         </Navbar.Brand>
         <div className="left-div">
          <i className="fa fa-user-plus login-icon" ></i>
