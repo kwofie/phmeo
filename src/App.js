@@ -1,7 +1,7 @@
 import './App.css';
 import React, { useState } from 'react';
 import Login from './components/Login/Login';
-import './components/Dashboard/dashboard.css';
+// import './components/Dashboard/Dashboard.css';
 import Dashboard from './components/Dashboard/Dashboard';
 import Header from './components/Header/Header';
 // import DigitalClock from './components/Clock/DigitalClock';
