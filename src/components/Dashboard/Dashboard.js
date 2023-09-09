@@ -1,16 +1,29 @@
-import React,{useState} from "react";
-import {NavDropdown,Nav,Navbar} from "react-bootstrap"
-import Header from "../Header/Header";
-import phmeo2 from "../images/phmeo2.png";
+import React from "react";
+import {Nav,Navbar} from "react-bootstrap"
+// import phmeo2 from "../images/phmeo2.png";
+import PHMEO from "../images/PHMEO.png";
 import "../Dashboard/Dashboard.css";
+// import Sidebar from "../Sidebar/Sidebar";
 
 
 function Dashboard () {
-  const [isExpended, setExpendState] = useState(false);
+ 
   return(
     <div>
-      <Header/>
-    <Navbar bg="dark"  variant="dark"  expand="lg">
+      {/* NAVBAR */}
+      <Navbar className="navbar navbar-inverse set-radius-zero">
+         <Nav className="container">
+<img  alt="phmeo" className="header-logo" src={PHMEO}/>  
+        <Navbar.Brand className="navbar-header">
+           
+        </Navbar.Brand>
+        <div className="left-div">
+         <i className="fa fa-user-plus login-icon" ></i>
+        </div>
+        </Nav>
+</Navbar>
+
+    {/* <Navbar bg="dark"  variant="dark"  expand="lg">
       <Navbar.Brand href="#home">
              <img
               alt=""
@@ -44,42 +57,18 @@ function Dashboard () {
         <Nav.Link href="logout" className="nav-item"><i className="fa fa-sign-out"></i>&nbsp;Logout</Nav.Link>
         </Nav>
       </Navbar.Collapse>
-  </Navbar>
+  </Navbar> */}
          
-    <div className="content-wrapper ">
-       <div className="container ">
+   
+       {/* <div className="container ">
        <div className="row">
-             <div className="col-md-12">
-                <h4 className="page-head-line"><span className="fa fa-dashboard"></span>&nbsp;Dashboard</h4>
-             </div>
-           </div>
-       </div>
-        {/* SIDE BAR START HERE  */}
-       
-          {/* <div className="col-md-3 side-nav-container">
-          <div className="bg-white ">
-            <div className="side-bar-heading text-center py-4 primary-text fs-4 fw-bold text-uppercase">
-              <i className="fa fa-home me-2"></i>Dashboard Menu 
-            </div>
-             <div>
-             <i className="fa fa-users me-2"></i>Schools
-             </div> 
-             <div>
-             <i className="fa fa-user me-2"></i>Staff  
-             </div>
-             <div>
-             <i className="fa fa-sections me-2"></i>Management 
-             </div>
-          </div>
-
-          </div> */}
-
-     <div className={isExpended? "side-nav-container" :"side-nav-container side-nav-container-NX"}>
+       <div className="col-md-4">
+       <div className={isExpended? "side-nav-container" :"side-nav-container side-nav-container-NX"}>
        <div className="nav-upper">
          <div className="nav-heading">
          {isExpended && (<div className="nav-brand">
               <img src="icon" alt=""/>
-              <h3 className="heading">DASHBOARD MENU</h3>
+              <h3 className="heading">DASHBOARD</h3>
            </div>)}
             <button type="" className={isExpended? "hamburger hamburger-in" :"hamburger hamburger-out"}
             onClick={()=> setExpendState(!isExpended)} 
@@ -110,17 +99,81 @@ function Dashboard () {
              </div>
          </div>
        </div>
+    </div>          
+       </div>
+             <div className="col-md-8">
+                <h4 className="page-head-line"><span className="fa fa-dashboard"></span>&nbsp;Dashboard</h4>
+             </div>
+
+             
+
+           </div>
+
+       </div> */}
+
+   <div className="content-wrapper ">
+     <div id="sidebar">
+          <div className="sidebar-header">
+             <h3>PHMEO DASHBOARD</h3>
+             <strong>PHMEO</strong>
+          </div>
+
+          <ul className="list-unstyled components">
+             <li className="active">
+                <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" className="dropdown-toggle">
+                   <i className="fa fa-home"></i>
+                   Home
+                </a>
+                <ul className="collapse list-unstyled" id="homeSubmenu">
+                  <li>
+                    <a href="#home">Home</a>
+                  </li>
+                  <li>
+                    <a href="#home2">Staff</a>
+                  </li>
+                  <li>
+                    <a href="#home3">Non-Teaching Staff</a>
+                  </li>
+                </ul>
+             </li>
+             <li>
+               
+              <a href="#staff" data-toggle="collapse" aria-expanded="false" className="dropdown-toggle" >
+                <i className="fa fa-briefcase"></i>
+                Staff
+              </a>
+              <ul className="collapse list-unstyled" id="staff">
+                <li>Teaching</li>
+                <li>Non-Teaching</li>
+              </ul>
+             </li>
+             <li>
+              <a href="#schools" data-toggle="collapse" aria-expanded="false" className="dropdown-toggle"><i className="fa fa-database"></i>Schools</a>
+              <ul className="collapse list-unstyled" id="schools">
+                <a href="#public"><i className="fa-dasboard"></i>Public schools
+                <ul className="public">
+                  <li></li>
+                </ul>
+                </a>
+                <a href="#private"><i className="fa-dasboard"></i>Private schools</a>
+              </ul>
+             </li>
+
+
+          </ul>
+     </div>
+     <div className="mainpage">
+      
      </div>
 
 
 
-
-
-
-
-
-
+       
+    
     </div>
+
+
+
 
   </div>
   );

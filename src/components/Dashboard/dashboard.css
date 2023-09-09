@@ -1,7 +1,7 @@
-.side-nav-container{
+/* .side-nav-container{
     background-color: rgb(37, 33, 33);
     width: 300px;
-    height: 100vh;
+    height: 600px;
     position: relative;
     transition: 0.4s;
 }
@@ -100,4 +100,163 @@
     text-transform: uppercase;
     border-radius: 10px;
    position: relative;
+} */
+
+
+
+/* =============================================================
+   GENERAL STYLES
+ ============================================================ */
+
+ @import url(http://fonts.googleapis.com/css?family=Roboto);
+
+ /* FREE GOOGLE FONT */
+  
+ body {
+     font-family: 'Roboto', sans-serif;
+     line-height: 30px;
+     background-color: #81cfe0;
+ }
+  
+ .set-radius-zero {
+    border-radius: 0px;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+}
+.header-logo{
+    cursor: pointer;
+}
+ 
+.login-icon {
+    height: 60px;
+    width: 60px;
+    padding: 13px;
+    border-radius: 50%;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    background-color: #F0677C;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+}
+
+
+.navbar{
+    background-color: #F0677C;
+    color: #fff;
+    padding: 10px;
+    text-align: right;
+}
+
+
+
+ /* =============================================================
+    LOGO SECTION STYLES
+  ============================================================ */
+  
+  .left-div {
+    padding-left: 30px;
+    margin-left: 150px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.navbar-brand {
+    padding-top: 30px;
+    float: left;
+    height: 50px;
+    padding: 15px 15px;
+    color: #fff;
+    font-size: 24px 4px;
+    line-height: 24px;
+}
+
+
+@media screen and (max-width: 400px) {
+    .navbar-header {
+        width: 400px;
+    }
+    .left-div i {
+        position: relative;
+        margin-left: 50px;
+    }
+}
+.navbar-inverse {
+    background-color: #C36464;
+    border-color: transparent;
+}
+
+.navbar {
+    margin-bottom: 0px;
+}
+
+/* ========================
+        SIDEBAR
+   ========================*/
+.content-wrapper{
+    display: flex;
+    align-items: stretch;
+}
+
+#sidebar{
+    min-width: 250px;
+    max-width: 250px;
+    background-color: black;
+    color: #fff;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+}
+#sidebar.active{
+    min-width: 80px;
+    max-width: 80px;
+    text-align: center;
+}
+
+#sidebar.active .sidebar-header{
+    display: none;
+}
+#sidebar.active .sidebar-header{
+    display: block;
+}
+
+#sidebar ul li a{
+    text-align: left;
+}
+
+#sidebar.active ul li a{
+     padding: 20px 10px;
+     text-align: center;
+     font-size: 0.85em;
+}
+
+#sidebar.active ul li a i{
+    margin-right: 0;
+    display: block;
+    font-size: 1.8em;
+    margin-bottom: 5px;
+}
+
+#sidebar.active ul ul a{
+    padding: 10px !important;
+}
+
+#sidebar.active .dropdown-toggle::after{
+   top: auto;
+   bottom: 10px;
+   right: 50%;
+   transform: translateX(50%) ;
+   -webkit-transform: translateX(50%) ;
+   -moz-transform: translateX(50%) ;
+   -ms-transform: translateX(50%) ;
+   -o-transform: translateX(50%) ;
+}
+ 
+#sidebar .sidebar-header{
+    padding: 20px;
+    background: #F0677C;
 }
