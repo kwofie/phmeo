@@ -1,7 +1,8 @@
 import React from "react";
-import {Nav,Navbar} from "react-bootstrap"
+import {Nav,Navbar,NavDropdown} from "react-bootstrap"
 // import phmeo2 from "../images/phmeo2.png";
 import PHMEO from "../images/PHMEO.png";
+import phmeo2 from "../images/phmeo2.png";
 import "../Dashboard/Dashboard.css";
 // import Sidebar from "../Sidebar/Sidebar";
 
@@ -23,7 +24,7 @@ function Dashboard () {
         </Nav>
 </Navbar>
 
-    {/* <Navbar bg="dark"  variant="dark"  expand="lg">
+    <Navbar bg="dark"  variant="dark"  expand="lg">
       <Navbar.Brand href="#home">
              <img
               alt=""
@@ -37,9 +38,9 @@ function Dashboard () {
       <Navbar.Toggle aria-controls="basic-navbar-nav"/>
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="ml-auto">
-          <Nav.Link href="#home" >Home</Nav.Link>
-          <Nav.Link  href="#link">Add Staff</Nav.Link>
-          <NavDropdown title="Department" id="basic-nav-dropdown" >
+          <Nav.Link href="#home" ><i className="fa fa-home"></i>&nbsp;Home</Nav.Link>
+          <Nav.Link  href="#link"><i className="fa fa-user-plus"></i>&nbsp;Add Staff</Nav.Link> 
+          <NavDropdown  title="Department" id="basic-nav-dropdown" > 
             <NavDropdown.Item href="#action1">Human Resource</NavDropdown.Item>
             <NavDropdown.Item href="#action2">
               Management and Supevision
@@ -50,6 +51,9 @@ function Dashboard () {
               Finance and Administration
             </NavDropdown.Item>
           </NavDropdown>
+        
+        
+         
           <Nav.Link href="#link">Link</Nav.Link>
           <Nav.Link href="#link">Link</Nav.Link>
         </Nav>
@@ -57,7 +61,7 @@ function Dashboard () {
         <Nav.Link href="logout" className="nav-item"><i className="fa fa-sign-out"></i>&nbsp;Logout</Nav.Link>
         </Nav>
       </Navbar.Collapse>
-  </Navbar> */}
+  </Navbar>
          
    
        {/* <div className="container ">
