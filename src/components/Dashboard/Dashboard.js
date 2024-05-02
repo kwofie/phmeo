@@ -16,7 +16,7 @@ function Dashboard () {
          <Nav className="container">
 <img  alt="phmeo" className="header-logo" src={PHMEO}/>  
         <Navbar.Brand className="navbar-header">
-           
+           PRESTEA HUNI VALLEY MUNICIPAL EDUCATION DIRECTORATE
         </Navbar.Brand>
         <div className="left-div">
          <i className="fa fa-user-plus login-icon" ></i>
@@ -33,7 +33,7 @@ function Dashboard () {
               height="30"
               className="d-inline-block align-top"
             />{' '}
-            PHMEO
+            PHMED
         </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav"/>
       <Navbar.Collapse id="basic-navbar-nav">
@@ -51,9 +51,6 @@ function Dashboard () {
               Finance and Administration
             </NavDropdown.Item>
           </NavDropdown>
-        
-        
-         
           <Nav.Link href="#link">Link</Nav.Link>
           <Nav.Link href="#link">Link</Nav.Link>
         </Nav>
@@ -61,6 +58,7 @@ function Dashboard () {
         <Nav.Link href="logout" className="nav-item"><i className="fa fa-sign-out"></i>&nbsp;Logout</Nav.Link>
         </Nav>
       </Navbar.Collapse>
+
   </Navbar>
          
    
@@ -118,8 +116,8 @@ function Dashboard () {
    <div className="content-wrapper ">
      <div id="sidebar">
           <div className="sidebar-header">
-             <h3>PHMEO DASHBOARD</h3>
-             <strong>PHMEO</strong>
+             <h5>PHMED DASHBOARD</h5>
+             <strong>PHMED</strong>
           </div>
 
           <ul className="list-unstyled components">
@@ -162,12 +160,11 @@ function Dashboard () {
                 <a href="#private"><i className="fa-dasboard"></i>Private schools</a>
               </ul>
              </li>
-
-
           </ul>
      </div>
+     {/* The Main Page */}
      <div className="mainpage">
-      
+      <p>This is the Main Page</p>
      </div>
 
 

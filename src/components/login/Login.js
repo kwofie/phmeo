@@ -1,5 +1,7 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState} from 'react';
 import PropTypes from 'prop-types';
+
+
 
 
 async function loginUser(credentials) {
@@ -15,19 +17,25 @@ async function loginUser(credentials) {
 
 
 
-function Login({ setToken }) {
-  const [username, setUserName] = useState();
-  const [password, setPassword] = useState();
+function Login() {
+  const [currentDate, setCurrentDate] = useState(new Date());
+  useEffect(()=>{
+    const intervalId = setInterval(()=> {
+      setCurrentDate(new Date());
+    }, 1000)
+    return () => clearInterval(intervalId);
+  },[]);
+
+
+  const [username, setUserName] = useState("");
+  const [password, setPassword] = useState("");
 
   const handleSubmit = async e => {
     e.preventDefault();
-    const token = await loginUser({
-      username,
-      password
-    });
-    setToken(token);
+   console.log(username)
+   
   }
-
+ 
 
 
 
@@ -35,20 +43,17 @@ function Login({ setToken }) {
       <div className="content-wrapper">
        <div className="container">
            <div className="row">
-
            <div className="col-md-12">
                  <h4 className="page-head-line">Please Login To Enter <div className="pull-right"><span id="tick2" className=""></span>&nbsp;
-             {/* $date = new DateTime();
-             echo $date->format('l, F jS, Y');  */}
+                  {currentDate.toLocaleString()}
                </div></h4>
             </div>
-
             <form  onSubmit={handleSubmit}>
            <div className="row">
                <div className="col-md-3">
                   
-                     <label>Enter Staff ID : </label>
-                       <input type="text"  onChange={e => setUserName(e.target.value)} className="form-control" placeholder="Staff ID" autoComplete="off"/>
+                     <label>Enter Staff Username : </label>
+                       <input type="text"  onChange={e => setUserName(e.target.value)} className="form-control" placeholder="Staff Username" autoComplete="off"/>
                        <label>Enter Password :  </label>
                        <input type="password" onChange={e => setPassword(e.target.value)} className="form-control" placeholder="Password" autoComplete="off"/>
                        <hr />
