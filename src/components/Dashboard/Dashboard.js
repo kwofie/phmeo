@@ -1,10 +1,9 @@
 import React from "react";
 import {Nav,Navbar,NavDropdown} from "react-bootstrap"
-// import phmeo2 from "../images/phmeo2.png";
 import PHMEO from "../images/PHMEO.png";
 import phmeo2 from "../images/phmeo2.png";
 import "../Dashboard/Dashboard.css";
-// import Sidebar from "../Sidebar/Sidebar";
+import Sidebar from "../Sidebar/Sidebar";
 
 
 function Dashboard () {
@@ -14,7 +13,7 @@ function Dashboard () {
       {/* NAVBAR */}
       <Navbar className="navbar navbar-inverse set-radius-zero">
          <Nav className="container">
-<img  alt="phmeo" className="header-logo" src={PHMEO}/>  
+       <img  alt="phmeo" className="header-logo" src={PHMEO}/>  
         <Navbar.Brand className="navbar-header">
            PRESTEA HUNI VALLEY MUNICIPAL EDUCATION DIRECTORATE
         </Navbar.Brand>
@@ -22,7 +21,7 @@ function Dashboard () {
          <i className="fa fa-user-plus login-icon" ></i>
         </div>
         </Nav>
-</Navbar>
+      </Navbar>
 
     <Navbar bg="dark"  variant="dark"  expand="lg">
       <Navbar.Brand href="#home">

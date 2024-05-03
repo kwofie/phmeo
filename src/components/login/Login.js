@@ -1,5 +1,6 @@
 import React, { useEffect, useState} from 'react';
 import PropTypes from 'prop-types';
+import { format } from 'date-fns';
 
 
 
@@ -21,11 +22,11 @@ function Login() {
   const [currentDate, setCurrentDate] = useState(new Date());
   useEffect(()=>{
     const intervalId = setInterval(()=> {
-      setCurrentDate(new Date());
+      setCurrentDate(format(new Date(), 'MMMM do yyyy, h:mm:ss a'));
     }, 1000)
     return () => clearInterval(intervalId);
   },[]);
-
+  
 
   const [username, setUserName] = useState("");
   const [password, setPassword] = useState("");
