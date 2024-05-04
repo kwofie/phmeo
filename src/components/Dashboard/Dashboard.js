@@ -59,59 +59,6 @@ function Dashboard () {
       </Navbar.Collapse>
 
   </Navbar>
-         
-   
-       {/* <div className="container ">
-       <div className="row">
-       <div className="col-md-4">
-       <div className={isExpended? "side-nav-container" :"side-nav-container side-nav-container-NX"}>
-       <div className="nav-upper">
-         <div className="nav-heading">
-         {isExpended && (<div className="nav-brand">
-              <img src="icon" alt=""/>
-              <h3 className="heading">DASHBOARD</h3>
-           </div>)}
-            <button type="" className={isExpended? "hamburger hamburger-in" :"hamburger hamburger-out"}
-            onClick={()=> setExpendState(!isExpended)} 
-            >
-               <span></span>
-               <span></span>
-               <span></span>
-            </button>
-         </div>
-         <div className="nav-menu">
-             <div className="menu-item">
-             <i className="fa fa-calendar me-2"></i>Schools
-             </div> 
-             <div className="menu-item">
-             <i className="fa fa-user me-2"></i>Staff  
-             </div>
-             <div className="menu-item">
-             <i className="fa fa-bell me-2"></i>Management 
-             </div>
-             <div className="menu-item">
-             <i className="fa fa-gears me-2"></i>Settings  
-             </div>
-             <div className="menu-item">
-             <i className="fa fa-outdent me-2"></i>Analytics 
-             </div>
-             <div className="menu-item">
-             <i className="fa fa-folder me-2"></i>Management 
-             </div>
-         </div>
-       </div>
-    </div>          
-       </div>
-             <div className="col-md-8">
-                <h4 className="page-head-line"><span className="fa fa-dashboard"></span>&nbsp;Dashboard</h4>
-             </div>
-
-             
-
-           </div>
-
-       </div> */}
-
    <div className="content-wrapper ">
      <div id="sidebar">
           <div className="sidebar-header">
@@ -174,7 +121,10 @@ function Dashboard () {
 
 
 
-
+    <footer>
+  <p>Author: Hege Refsnes</p>
+  <p><a href="mailto:hege@example.com">hege@example.com</a></p>
+</footer>
   </div>
   );
 }

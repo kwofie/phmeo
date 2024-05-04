@@ -13,8 +13,8 @@ import Dashboard from "./components/Dashboard/Dashboard";
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
-    {/* <Dashboard/> */}
+    {/* <App /> */}
+    <Dashboard/>
     {/* <Register/> */}
   </React.StrictMode>
 );
