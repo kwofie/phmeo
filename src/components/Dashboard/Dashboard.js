@@ -120,10 +120,12 @@ function Dashboard () {
     </div>
 
 
-
     <footer>
-  <p>Author: Hege Refsnes</p>
-  <p><a href="mailto:hege@example.com">hege@example.com</a></p>
+  <ul>
+      <li><a href="mailto:info@stackfindover.com"><i class="fa fa-envelope-open"></i> info@stackfindover.com</a></li>
+      <li><a href="#twiter"><i class="fa fa-twitter"></i>@stackfindover</a></li>
+      <li><a href="#linkedin"><i class="fa fa-linkedin"></i>Linkedin</a></li>
+  </ul>
 </footer>
   </div>
   );
