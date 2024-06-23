@@ -1,12 +1,13 @@
 import './App.css';
 import React from 'react';
-import Login from './components/Login/Login';
-// import Dashboard from './components/Dashboard/Dashboard';
+//import Login from './components/Login/Login';
+import Dashboard from './components/Dashboard/Dashboard';
 // import Sidebar from './components/Sidebar/Sidebar';
 
 import {
-  BrowserRouter,Route,Routes 
+  BrowserRouter,Routes 
 } from "react-router-dom";
+
 
 
 // THE ROUTER DOM
@@ -20,7 +21,8 @@ function App() {
 
   return (
    <BrowserRouter>
-   <Login/>
+   {/* <Login/> */}
+   <Dashboard/>
    <Routes>
     {/* <Route path="/" element={<Dashboard/>}></Route> */}
      {/* <Route path="/Dashboard" element={}></Route> */}
@@ -33,3 +35,7 @@ function App() {
 }
 
 export default App;
+
+
+
+

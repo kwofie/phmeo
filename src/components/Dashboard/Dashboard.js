@@ -3,7 +3,7 @@ import {Nav,Navbar,NavDropdown} from "react-bootstrap"
 import PHMEO from "../images/PHMEO.png";
 import phmeo2 from "../images/phmeo2.png";
 import "../Dashboard/Dashboard.css";
-import Sidebar from "../Sidebar/Sidebar";
+//import Sidebar from "../Sidebar/Sidebar";
 
 
 function Dashboard () {
@@ -11,17 +11,17 @@ function Dashboard () {
   return(
     <div>
       {/* NAVBAR */}
-      <Navbar className="navbar navbar-inverse set-radius-zero">
-         <Nav className="container">
+      <nav className="navbar navbar-inverse set-radius-zero">
+         <div className="container">
        <img  alt="phmeo" className="header-logo" src={PHMEO}/>  
-        <Navbar.Brand className="navbar-header">
+        <div className="navbar-header">
            PRESTEA HUNI VALLEY MUNICIPAL EDUCATION DIRECTORATE
-        </Navbar.Brand>
+        </div>
         <div className="left-div">
          <i className="fa fa-user-plus login-icon" ></i>
         </div>
-        </Nav>
-      </Navbar>
+        </div>
+      </nav>
 
     <Navbar bg="dark"  variant="dark"  expand="lg">
       <Navbar.Brand href="#home">
@@ -54,22 +54,22 @@ function Dashboard () {
           <Nav.Link href="#link">Link</Nav.Link>
         </Nav>
         <Nav className="nav navbar-nav">
-        <Nav.Link href="logout" className="nav-item"><i className="fa fa-sign-out"></i>&nbsp;Logout</Nav.Link>
+        <Nav.Link href="#logout" className="nav-item"><i className="fa fa-sign-out"></i>&nbsp;Logout</Nav.Link>
         </Nav>
       </Navbar.Collapse>
 
   </Navbar>
    <div className="content-wrapper ">
-     <div id="sidebar">
+     <nav id="sidebar">
           <div className="sidebar-header">
-             <h5>PHMED DASHBOARD</h5>
+             <h5>DASHBOARD</h5>
              <strong>PHMED</strong>
           </div>
 
           <ul className="list-unstyled components">
              <li className="active">
                 <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" className="dropdown-toggle">
-                   <i className="fa fa-home"></i>
+                   <i className="fa fa-home"></i>&nbsp;
                    Home
                 </a>
                 <ul className="collapse list-unstyled" id="homeSubmenu">
@@ -77,17 +77,17 @@ function Dashboard () {
                     <a href="#home">Home</a>
                   </li>
                   <li>
-                    <a href="#home2">Staff</a>
+                    <a href="#staff">Staff</a>
                   </li>
                   <li>
-                    <a href="#home3">Non-Teaching Staff</a>
+                    <a href="#nonteaching">Non-Teaching Staff</a>
                   </li>
                 </ul>
              </li>
              <li>
                
               <a href="#staff" data-toggle="collapse" aria-expanded="false" className="dropdown-toggle" >
-                <i className="fa fa-briefcase"></i>
+                <i className="fa fa-briefcase"></i>&nbsp;
                 Staff
               </a>
               <ul className="collapse list-unstyled" id="staff">
@@ -96,7 +96,7 @@ function Dashboard () {
               </ul>
              </li>
              <li>
-              <a href="#schools" data-toggle="collapse" aria-expanded="false" className="dropdown-toggle"><i className="fa fa-database"></i>Schools</a>
+              <a href="#schools" data-toggle="collapse" aria-expanded="false" className="dropdown-toggle"><i className="fa fa-database"></i>&nbsp; Schools</a>
               <ul className="collapse list-unstyled" id="schools">
                 <a href="#public"><i className="fa-dasboard"></i>Public schools
                 <ul className="public">
@@ -107,7 +107,7 @@ function Dashboard () {
               </ul>
              </li>
           </ul>
-     </div>
+     </nav>
      {/* The Main Page */}
      <div className="mainpage">
       <p>This is the Main Page</p>
@@ -122,9 +122,9 @@ function Dashboard () {
 
     <footer>
   <ul>
-      <li><a href="mailto:info@stackfindover.com"><i class="fa fa-envelope-open"></i> info@stackfindover.com</a></li>
-      <li><a href="#twiter"><i class="fa fa-twitter"></i>@stackfindover</a></li>
-      <li><a href="#linkedin"><i class="fa fa-linkedin"></i>Linkedin</a></li>
+      <li><a href="mailto:info@stackfindover.com"><i className="fa fa-envelope-open"></i> info@stackfindover.com</a></li>
+      <li><a href="#twiter"><i className="fa fa-twitter"></i>@stackfindover</a></li>
+      <li><a href="#linkedin"><i className="fa fa-linkedin"></i>Linkedin</a></li>
   </ul>
 </footer>
   </div>

@@ -104,15 +104,15 @@
 
 
 
-/* =============================================================
+/* ============================================================
    GENERAL STYLES
- ============================================================ */
-
- @import url(http://fonts.googleapis.com/css?family=Roboto);
+   ============================================================ */
+/* 
+ @import url(http://fonts.googleapis.com/css?family=Roboto); */
 
  /* FREE GOOGLE FONT */
   
- body {
+ /* body {
      font-family: 'Roboto', sans-serif;
      line-height: 30px;
      background-color: #81cfe0;
@@ -120,8 +120,6 @@
   
  .set-radius-zero {
     border-radius: 0px;
-    -moz-border-radius: 0px;
-    -webkit-border-radius: 0px;
 }
 .header-logo{
     cursor: pointer;
@@ -138,8 +136,6 @@
     text-align: center;
     cursor: pointer;
     background-color: #F0677C;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
 }
 
 
@@ -151,23 +147,25 @@
 }
 
 .navbar-header{
-    position: left;
     font-size: 23px;
-}
+    cursor: pointer;
+} */
+
+
 
 
 
  /* ==========================================================
     LOGO SECTION STYLES
     ========================================================== */
-  
+/*   
   .left-div {
     padding-left: 30px;
     margin-left: 150px;
     margin-top: 40px;
     margin-bottom: 30px;
-}
-
+} */
+/* 
 .navbar-brand {
     padding-top: 30px;
     float: left;
@@ -176,18 +174,9 @@
     color: #fff;
     font-size: 24px 4px;
     line-height: 24px;
-}
+} */
 
-
-@media screen and (max-width: 400px) {
-    .navbar-header {
-        width: 400px;
-    }
-    .left-div i {
-        position: relative;
-        margin-left: 50px;
-    }
-}
+/* 
 .navbar-inverse {
     background-color: #C36464;
     border-color: transparent;
@@ -195,57 +184,107 @@
 
 .navbar {
     margin-bottom: 0px;
-}
+} */
+
 
 /* ========================
         SIDEBAR
    ========================*/
-.content-wrapper{
+/* .content-wrapper{
     display: flex;
     align-items: stretch;
+    margin: 0px;
+    padding: 0px;
 }
+a,
+a:hover,
+a:focus{
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
 
 #sidebar{
     min-width: 250px;
     max-width: 250px;
-    background-color: black;
+    background-color: #C36464;
     color: #fff;
     transition: all 0.3s;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    -ms-transition: all 0.3s;
-    -o-transition: all 0.3s;
+   
 }
 #sidebar.active{
-    min-width: 80px;
-    max-width: 80px;
-    text-align: center;
+   margin-left: -250px;
+} */
+
+/* #sidebar .sidebar-header{
+    padding: 20px;
+    background-color: rgb(41, 40, 40);
+} */
+/* 
+#sidebar .sidebar-header{
+    padding: 20px;
+    background: #F0677C;
 }
 
-#sidebar.active .sidebar-header{
-    display: none;
+#sidebar ul.components{
+    padding:  20px 0;
+    border-bottom: rgba(39, 38, 38, 0.55);
 }
-#sidebar.active .sidebar-header{
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1.1em;
     display: block;
 }
 
-#sidebar ul li a{
-    text-align: left;
+#sidebar ul li a:hover {
+    color: #F0677C;
+    background: #fff;
+} */
+/* 
+#sidebar ul li.active>a,
+a[aria-expanded="true"] {
+    color: #fff;
+    background: #F0677C;
+} */
+
+/* a[data-toggle="collapse"] {
+    position: relative;
 }
 
-#sidebar.active ul li a{
-     padding: 20px 10px;
-     text-align: center;
-     font-size: 0.85em;
-}
-
-#sidebar.active ul li a i{
-    margin-right: 0;
+.dropdown-toggle::after {
     display: block;
-    font-size: 1.8em;
-    margin-bottom: 5px;
-}
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+} */
+/* 
+#sidebar ul li a {
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+   
+} */
 
+
+/* ========================
+   SIDEBAR MEDIA QUERRIES  
+   ========================*/
+/* 
+@media (max-width: 768px) {
+
+    #sidebar {
+        margin-left: -250px;
+    }
+    #sidebar.active {
+        margin-left: 0;
+    }
+    #sidebarCollapse span {
+        display: none;
+    }
+} */
+
+/* 
 #sidebar.active ul ul a{
     padding: 10px !important;
 }
@@ -255,13 +294,5 @@
    bottom: 10px;
    right: 50%;
    transform: translateX(50%) ;
-   -webkit-transform: translateX(50%) ;
-   -moz-transform: translateX(50%) ;
-   -ms-transform: translateX(50%) ;
-   -o-transform: translateX(50%) ;
 }
- 
-#sidebar .sidebar-header{
-    padding: 20px;
-    background: #F0677C;
-}
+  */
