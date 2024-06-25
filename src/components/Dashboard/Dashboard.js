@@ -11,7 +11,7 @@ function Dashboard () {
   return(
     <div>
       {/* NAVBAR */}
-      <nav className="navbar navbar-inverse set-radius-zero">
+      <Nav className="navbar navbar-inverse set-radius-zero">
          <div className="container">
        <img  alt="phmeo" className="header-logo" src={PHMEO}/>  
         <div className="navbar-header">
@@ -21,9 +21,9 @@ function Dashboard () {
          <i className="fa fa-user-plus login-icon" ></i>
         </div>
         </div>
-      </nav>
+      </Nav>
 
-    <Navbar bg="dark"  variant="dark"  expand="lg">
+      <Navbar bg="dark"  variant="dark"  expand="lg">
       <Navbar.Brand href="#home">
              <img
               alt=""
@@ -62,8 +62,8 @@ function Dashboard () {
    <div className="content-wrapper ">
      <nav id="sidebar">
           <div className="sidebar-header">
-             <h5>DASHBOARD</h5>
-             <strong>PHMED</strong>
+             <h5><i className="fa fa-dashboard"></i>DASHBOARD</h5>
+             {/* <strong>PHMED</strong> */}
           </div>
 
           <ul className="list-unstyled components">
@@ -108,8 +108,13 @@ function Dashboard () {
              </li>
           </ul>
      </nav>
-     {/* The Main Page */}
-     <div className="mainpage">
+     {/*=========== The Main Page ==========*/}
+     <div className="mainpage" id="mainpage">
+      
+
+
+
+
       <p>This is the Main Page</p>
      </div>
 
