@@ -85,11 +85,17 @@
         cursor: pointer;
      }
 
- .content-wrapper {
+     .content-wrapper{
+        display: flex;
+        width: 100%;
+        align-items: stretch;
+       }
+
+ /* .content-wrapper {
      margin-top: 40px;
      min-height: 650px;
      padding-bottom: 60px;
- }
+ } */
  
  .page-head-line {
      font-weight: 900;
@@ -261,12 +267,6 @@
 /* ========================
         SIDEBAR
    ========================*/
-   .content-wrapper{
-    display: flex;
-    align-items: stretch;
-    margin: 0px;
-    padding: 0px;
-   }
   a,
   a:hover,
   a:focus{
@@ -302,6 +302,7 @@
     color: #F0677C;
     background: #fff;
 }
+
 
 
 

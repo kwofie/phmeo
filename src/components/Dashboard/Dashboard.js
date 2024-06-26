@@ -68,7 +68,7 @@ function Dashboard () {
 
           <ul className="list-unstyled components">
              <li className="active">
-                <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" className="dropdown-toggle">
+                <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" className="home dropdown-toggle">
                    <i className="fa fa-home"></i>&nbsp;
                    Home
                 </a>
@@ -106,17 +106,34 @@ function Dashboard () {
                 <a href="#private"><i className="fa-dasboard"></i>Private schools</a>
               </ul>
              </li>
+             <li>
+              <a href="#department" data-toggle="collapse" aria-expanded="false" className="dropdown-toggle"><i className="fa fa-th-large"></i>&nbsp;Department</a>
+              <ul className="collapse list-unstyled" id="departments">
+                
+              </ul>
+             </li>
+             <li>
+             <a href="#settings" aria-expanded="false" className="settings"><i className="fa fa-gear"></i>&nbsp;settings</a>
+             </li>
+             <li></li>
           </ul>
      </nav>
      {/*=========== The Main Page ==========*/}
-     <div className="mainpage" id="mainpage">
-      
+     <div id="mainpage">
+       <div className="container-fluid">
+        <button type="button" id="sidebarCollapse" class="btn btn-info">
+            <i class="fa fa-arrow-right"></i>
+       </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa fa-arrow-left"></i>
+                    </button>
 
 
 
+                  
 
-      <p>This is the Main Page</p>
-     </div>
+       </div>
+  </div>
 
 
 
@@ -125,13 +142,13 @@ function Dashboard () {
     </div>
 
 
-    <footer>
+    {/* <footer>
   <ul>
       <li><a href="mailto:info@stackfindover.com"><i className="fa fa-envelope-open"></i> info@stackfindover.com</a></li>
       <li><a href="#twiter"><i className="fa fa-twitter"></i>@stackfindover</a></li>
       <li><a href="#linkedin"><i className="fa fa-linkedin"></i>Linkedin</a></li>
   </ul>
-</footer>
+</footer> */}
   </div>
   );
 }
