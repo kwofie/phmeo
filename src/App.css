@@ -23,9 +23,9 @@
  /* FREE GOOGLE FONT */
   
  body {
-     font-family: 'Roboto', sans-serif;
      line-height: 30px;
      background-color: #81cfe0;
+     font-family: 'Roboto', sans-serif;
  }
 
  /*===========================
@@ -276,6 +276,7 @@
   }
  
   #sidebar{
+    min-height: 100vh;
     min-width: 250px;
     max-width: 250px;
     background-color: #C36464;
@@ -283,9 +284,7 @@
     transition: all 0.3s;
    
 }
-#sidebar.active{
-   margin-left: -250px;
-}
+
 
 #sidebar .sidebar-header{
     padding: 20px;
@@ -302,6 +301,24 @@
     color: #F0677C;
     background: #fff;
 }
+
+#sidebar ul li a i{
+ margin: 10px;
+}
+/* 
+#sidebar .active ul li a {
+    margin-left: 37px;
+} */
+
+#sidebar ul li a .dropdown{
+   
+
+    
+}
+
+
+
+
 
 
 
@@ -329,16 +346,16 @@
         display: none;
     }
 }
-#sidebar.active ul ul a{
+/* #sidebar.active ul ul a{
     padding: 10px !important;
-}
-
+} */
+/* 
 #sidebar.active .dropdown-toggle::after{
    top: auto;
    bottom: 10px;
    right: 50%;
    transform: translateX(50%) ;
-}
+} */
 
 .sidebar-header h5{
     font-size: 25px 4px;
@@ -356,7 +373,7 @@ margin-right: 10px;
  /* ===========================================================
     FOOTER SECTION STYLES
     =========================================================== */
- 
+/*  
  footer {
      padding: 10px;
      color: #fff;
@@ -369,7 +386,7 @@ margin-right: 10px;
      color: #fff;
      text-decoration: none;
  }
- 
+  */
  
  /*=============================================
      DASHBOARD  STYLES    

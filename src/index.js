@@ -5,8 +5,8 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import Register from "./components/Register/Register";
-import Dashboard from "./components/Dashboard/Dashboard";
+//import Register from "./components/Register/Register";
+//import Dashboard from "./components/Dashboard/Dashboard";
 
 
 

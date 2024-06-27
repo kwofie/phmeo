@@ -67,36 +67,36 @@ function Dashboard () {
           </div>
 
           <ul className="list-unstyled components">
-             <li className="active">
-                <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" className="home dropdown-toggle">
-                   <i className="fa fa-home"></i>&nbsp;
-                   Home
+          <li className="active">
+                <a href="#homeSubmenu" className="sub-btn">
+                   <i className="fa fa-home"></i> Home<i className="fa fa-angle-right dropdown"></i> 
                 </a>
-                <ul className="collapse list-unstyled" id="homeSubmenu">
+                <ul className="list-unstyled" id="homeSubmenu">
                   <li>
-                    <a href="#home">Home</a>
+                    <a href="#organogram" className="submenu-item">Organogram</a>
                   </li>
                   <li>
-                    <a href="#staff">Staff</a>
+                    <a href="#Infrastructure" className="submenu-item">Infrastructure</a>
                   </li>
                   <li>
-                    <a href="#nonteaching">Non-Teaching Staff</a>
+                    <a href="#statistics" className="submenu-item">Statistics</a>
                   </li>
                 </ul>
              </li>
+
+
              <li>
-               
-              <a href="#staff" data-toggle="collapse" aria-expanded="false" className="dropdown-toggle" >
-                <i className="fa fa-briefcase"></i>&nbsp;
-                Staff
+              <a href="#staff" >
+                <i className="fa fa-briefcase"></i>Staff<i className="fa fa-angle-right dropdown"></i>
               </a>
               <ul className="collapse list-unstyled" id="staff">
-                <li>Teaching</li>
+                <li>Teaching Staff</li>
                 <li>Non-Teaching</li>
+                <li>Students Population</li>
               </ul>
              </li>
              <li>
-              <a href="#schools" data-toggle="collapse" aria-expanded="false" className="dropdown-toggle"><i className="fa fa-database"></i>&nbsp; Schools</a>
+              <a href="#schools" ><i className="fa fa-database"></i> Schools<i className="fa fa-angle-right dropdown"></i> </a>
               <ul className="collapse list-unstyled" id="schools">
                 <a href="#public"><i className="fa-dasboard"></i>Public schools
                 <ul className="public">
@@ -107,32 +107,35 @@ function Dashboard () {
               </ul>
              </li>
              <li>
-              <a href="#department" data-toggle="collapse" aria-expanded="false" className="dropdown-toggle"><i className="fa fa-th-large"></i>&nbsp;Department</a>
+              <a href="#department"><i className="fa fa-th-large"></i>Department<i className="fa fa-angle-right dropdown"></i></a>
               <ul className="collapse list-unstyled" id="departments">
                 
               </ul>
              </li>
              <li>
-             <a href="#settings" aria-expanded="false" className="settings"><i className="fa fa-gear"></i>&nbsp;settings</a>
+             <a href="#settings"  className="settings"><i className="fa fa-gear"></i>settings</a>
              </li>
-             <li></li>
+             
+            
+             
+
+
           </ul>
      </nav>
      {/*=========== The Main Page ==========*/}
      <div id="mainpage">
-       <div className="container-fluid">
-        <button type="button" id="sidebarCollapse" class="btn btn-info">
-            <i class="fa fa-arrow-right"></i>
+       {/* <div className="container-fluid">
+        <button type="button" id="sidebarCollapse" className="btn btn-info">
+            <i className="fa fa-arrow-right"></i>
        </button>
-                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="fa fa-arrow-left"></i>
+                    <button className="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i className="fa fa-arrow-left"></i>
                     </button>
 
-
-
-                  
-
        </div>
+ */}
+
+
   </div>
 
 
@@ -141,7 +144,7 @@ function Dashboard () {
     
     </div>
 
-
+ 
     {/* <footer>
   <ul>
       <li><a href="mailto:info@stackfindover.com"><i className="fa fa-envelope-open"></i> info@stackfindover.com</a></li>
@@ -152,4 +155,6 @@ function Dashboard () {
   </div>
   );
 }
+
+
 export default Dashboard;
